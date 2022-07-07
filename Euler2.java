@@ -20,7 +20,7 @@ public class Euler2 {
                 sum += fib3;
             }
 
-            // Shift fibonacci numbers leftwards, disposing of unneeded value.
+            // Shift fibonacci numbers "leftwards", disposing of unneeded value.
             fib1 = fib2;
             fib2 = fib3;
         }
