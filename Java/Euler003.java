@@ -5,7 +5,7 @@
  * What is the largest prime factor of the number 600851475143 ?
  */
 
-public class Euler3 {
+public class Euler003 {
     public static void main(String[] args){
         long num = 600851475143L, largestPrimeFactor = 0;
 

@@ -7,22 +7,22 @@
  * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  */
 
-public class Euler2 {
+public class Euler002 {
     public static void main(String[] args){
-        // sum starts at 2, not 0, in order to count the Fibonacci number 2.
-        int fib1 = 1, fib2 = 2, fib3 = 3, sum = 2;
+        // Sum starts at 2, not 0, in order to count the Fibonacci number 2.
+        int[] fib = {1, 2, 3};
+        int sum = 2;
 
-        while(fib3 <= 4000000){
-            fib3 = fib2 + fib1;
-
+        while(fib[2] <= 4000000){
             // Add even-valued Fibonacci numbers to sum.
-            if(fib3 % 2 == 0){
-                sum += fib3;
+            if(fib[2] % 2 == 0){
+                sum += fib[2];
             }
 
             // Shift fibonacci numbers "leftwards", disposing of unneeded value.
-            fib1 = fib2;
-            fib2 = fib3;
+            fib[0] = fib[1];
+            fib[1] = fib[2];
+            fib[2] = fib[0] + fib[1];
         }
 
         System.out.println(sum);

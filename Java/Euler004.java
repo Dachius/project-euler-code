@@ -6,7 +6,7 @@
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
-public class Euler4 {
+public class Euler004 {
     public static void main(String[] args){
         int largestPalindrome = 0;
         // Generate all products of 3-digit numbers.
