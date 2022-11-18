@@ -2,6 +2,8 @@ import java.util.*;
 
 public class Euler007{
 	public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
+        
 		ArrayList<Integer> primes = new ArrayList<Integer>();
 		
 		for(int i = 2; primes.size() <= 10000; i++){
@@ -11,7 +13,7 @@ public class Euler007{
 			}
 		}
 		
-		System.out.println("Solution to Project Euler problem 7: " + primes.get(10000));
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #7: " + primes.get(10000));
 			
 	}
 	

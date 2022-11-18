@@ -20,8 +20,7 @@ public class Euler044{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 44: " + dif);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #44: " + dif);
 	}
 	
 	public static boolean isPentagonal(int n){

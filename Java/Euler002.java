@@ -9,6 +9,8 @@
 
 public class Euler002 {
     public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
+
         // Sum starts at 2, not 0, in order to count the Fibonacci number 2.
         int[] fib = {1, 2, 3};
         int sum = 2;
@@ -25,6 +27,6 @@ public class Euler002 {
             fib[2] = fib[0] + fib[1];
         }
 
-        System.out.println(sum);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #2: " + sum);
     }
 }

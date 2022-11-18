@@ -7,7 +7,6 @@ public class Euler100 {
             }
         }
 
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-        System.out.println("Solution to Project Euler problem 100: ");
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #100: ");
     }
 }

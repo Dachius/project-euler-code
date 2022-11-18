@@ -11,8 +11,7 @@ public class Euler052 {
             }
 
             if(solution){
-                System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-                System.out.println("Solution to Project Euler problem 52: " + i);
+                System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #52: " + i);
                 System.exit(0);
             }
         }

@@ -29,10 +29,7 @@ public class Euler050 {
             }
         }
 
-        System.out.println(primes.size());
-
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 50: " + largest + " " + mostPrimes);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #50: " + largest + " " + mostPrimes);
     }
 
     //Checks if given long, "test", is a prime. 

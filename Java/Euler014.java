@@ -1,5 +1,6 @@
 public class Euler014{
 	public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
 		
 		long maxSteps = 0, num = 0;
 		
@@ -10,7 +11,8 @@ public class Euler014{
 				num = i;
 			}
 		}
-		System.out.println("Solution to Project Euler problem 14: " + num);
+        
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #14: " + num);
 	}
 	
 	public static long collatzStep(long n){

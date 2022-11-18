@@ -22,10 +22,8 @@ public class Euler038 {
 
         for(int i = concats.size() - 1; i >= 0; i--){
             if(pandigitals.contains(concats.get(i))){
-                System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-                System.out.println("Solution to Project Euler problem 38: " + concats.get(i));
-
-                break;
+                System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #38: " + concats.get(i));
+                System.exit(0);
             }
         }
     }

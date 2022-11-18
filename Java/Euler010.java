@@ -2,6 +2,7 @@ import java.math.*;
 
 public class Euler010{
 	public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
 		
 		BigInteger sum = new BigInteger("0");
 		
@@ -11,7 +12,7 @@ public class Euler010{
 			}
 		}
 		
-		System.out.println("Solution to Project Euler problem 10: " + sum);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #10: " + sum);
 	}
 	
 	public static boolean isPrime(int test){

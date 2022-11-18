@@ -3,6 +3,7 @@
 public class Euler037{
 	public static void main(String[] args){
 		long startTime = System.currentTimeMillis();
+        
 		long sum = 0;
 		
 		for(int i = 10; i < 1000000; i++){
@@ -11,8 +12,7 @@ public class Euler037{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 37: " + sum);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #37: " + sum);
 	}
 	
 	public static boolean isTruncatable(int test){

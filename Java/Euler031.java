@@ -5,8 +5,8 @@ public class Euler031 {
         long startTime = System.currentTimeMillis();
 
         int solution = coinRecursion(0, 0);
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-        System.out.println("Solution to Project Euler problem 31: " + solution);
+        
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #31: " + solution);
     }
 
     public static int coinRecursion(int num, int index){

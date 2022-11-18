@@ -13,8 +13,8 @@ public class Euler056{
                 }
             }
         }
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 56: " + maxSum);
+        
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #56: " + maxSum);
     }
 
     public static int digitSum(BigInteger n){

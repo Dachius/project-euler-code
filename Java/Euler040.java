@@ -12,7 +12,6 @@ public class Euler040{
 			mult *= Integer.parseInt("" + concat.charAt((int)Math.pow(10, i) - 1));
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 40: " + mult);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #40: " + mult);
 	}
 }

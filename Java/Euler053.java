@@ -14,8 +14,7 @@ public class Euler053 {
             }
         }
 
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-        System.out.println("Solution to Project Euler problem 53: " + count);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #53: " + count);
     }
 
     public static BigInteger choose(int n, int r){

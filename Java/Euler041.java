@@ -61,8 +61,7 @@ public class Euler041{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 41: " + highestPrime);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #41: " + highestPrime);
 	}
 	
 	public static boolean isPrime(long test){
@@ -75,8 +74,8 @@ public class Euler041{
 			return true;
 		}
 		
-		int sqrtTest = (int)Math.sqrt(test);
-		for(long i = 2; i <= sqrtTest; i++){
+		
+		for(long i = 2; i <= (int)Math.sqrt(test); i++){
 			if(test % i == 0){
 				return false;
 			}

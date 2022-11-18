@@ -39,8 +39,7 @@ public class Euler023{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 23: " + nonSumSum);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #23: " + nonSumSum);
 	}
 	
 	public static int divisorSum(int num){

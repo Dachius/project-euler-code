@@ -17,8 +17,7 @@ public class Euler033 {
             }
         }
 
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-        System.out.println("Solution to Project Euler problem 33: " + Math.ceil(1.0/denominator));
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #33: " + Math.ceil(1.0/denominator));
     }
 
     //Takes an int num, returns an array consisting of its digits at their apporpriate indices

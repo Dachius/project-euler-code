@@ -7,6 +7,8 @@
 
 public class Euler003 {
     public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
+
         long num = 600851475143L, largestPrimeFactor = 0;
 
         // Run through numbers less than num, and eliminate prime factors in ascending order for efficiency.
@@ -18,6 +20,6 @@ public class Euler003 {
             }
         }
 
-        System.out.println(largestPrimeFactor);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #3: " + largestPrimeFactor);
     }
 }

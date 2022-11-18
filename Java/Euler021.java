@@ -1,5 +1,6 @@
 public class Euler021{
     public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
         
         int amicableSum = 0;
         
@@ -8,8 +9,7 @@ public class Euler021{
                 amicableSum += i;
             }
         }
-        
-        System.out.println("Solution to Project Euler problem 21: " + amicableSum);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #21: " + amicableSum);
     }
     
     public static int divisorSum(int num){

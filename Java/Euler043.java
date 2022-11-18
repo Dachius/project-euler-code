@@ -20,8 +20,7 @@ public class Euler043 {
             }
         }
 
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-        System.out.println("Solution to Project Euler problem 43: " + sum);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #43: " + sum);
     }
 
     public static ArrayList<Long> stringsToLongs(ArrayList<String> list){

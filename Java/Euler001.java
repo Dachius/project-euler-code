@@ -7,6 +7,8 @@
 
 public class Euler001{
     public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
+
         int sum = 0;
 
         // Check each natural number with value < 1000.
@@ -17,6 +19,6 @@ public class Euler001{
             }
         }
 
-        System.out.println(sum);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #1: " + sum);
     }
 }

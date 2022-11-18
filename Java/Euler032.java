@@ -23,8 +23,7 @@ public class Euler032 {
 			sum += products.get(i);
 		}
 
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-        System.out.println("Solution to Project Euler problem 32: " + sum);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #32: " + sum);
     }
 
     //Removes duplicate entries from an ArrayList

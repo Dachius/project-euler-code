@@ -1,5 +1,6 @@
 public class Euler015{
 	public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
 		
 		long[][] cells = new long[21][21];
 		
@@ -27,6 +28,6 @@ public class Euler015{
 			j = jSave;
 		}
 		
-		System.out.println("Solution to Project Euler problem 15: " + cells[20][20]);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #15: " + cells[20][20]);
 	}
 }

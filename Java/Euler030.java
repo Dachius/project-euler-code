@@ -1,6 +1,7 @@
 public class Euler030{
 	public static void main(String[] args){
 		long startTime = System.currentTimeMillis();
+        
 		long sum = 0;
 		
 		for(int i = 2; i < 1000000; i++){
@@ -9,8 +10,7 @@ public class Euler030{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 30: " + sum);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #30: " + sum);
 	}
 	
 	public static boolean equalsSumOfFifthPowersOfDigits(int n){

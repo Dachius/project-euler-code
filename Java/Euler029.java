@@ -4,6 +4,7 @@ import java.math.*;
 public class Euler029{
 	public static void main(String[] args){
 		long startTime = System.currentTimeMillis();
+        
 		ArrayList<BigInteger> combinations = new ArrayList<BigInteger>();
 		
 		for(int a = 2; a <= 100; a++){
@@ -16,8 +17,6 @@ public class Euler029{
 			}
 		}
 		
-		System.out.println(combinations.size());
-		
 		ArrayList<BigInteger> distinctTerms = new ArrayList<BigInteger>();
 		
 		for(int i = 0; i < combinations.size(); i++){
@@ -25,6 +24,7 @@ public class Euler029{
 			for(int j = 0; j < distinctTerms.size(); j++){
 				if(combinations.get(i).equals(distinctTerms.get(j))){
 					distinct = false;
+                    break;
 				}
 			}
 			if(distinct){
@@ -32,7 +32,6 @@ public class Euler029{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 29: " + distinctTerms.size());
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #29: " + distinctTerms.size());
 	}
 }

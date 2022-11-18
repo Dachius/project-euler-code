@@ -30,8 +30,7 @@ public class Euler047{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 47: " + first);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #47: " + first);
 	}
     public static boolean isPrime(long test){
         

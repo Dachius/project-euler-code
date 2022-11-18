@@ -13,8 +13,7 @@ public class Euler009{
 				}
 			}
 		}
-
-        System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 9: " + abc);
+        
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #9: " + abc);
 	}
 }

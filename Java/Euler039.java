@@ -22,7 +22,6 @@ public class Euler039{
 			}
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 39: " + highestP);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #39: " + highestP);
 	}
 }

@@ -6,8 +6,7 @@ public class Euler024 {
 		
 		ArrayList<String> permutations = permutations("0123456789");
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 24: " + permutations.get(999999));
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #24: " + permutations.get(999999));
     }
 
     //This finds permutations using recursion

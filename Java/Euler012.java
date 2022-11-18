@@ -6,6 +6,8 @@ public class Euler012{
 	public static int[] primes =  new int[1000];
 	
 	public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
+
 		ArrayList<Long> TriangularNumbers = new ArrayList<Long>();
 		
 		int index = 0;
@@ -28,7 +30,7 @@ public class Euler012{
 			}
 		}
 		
-		System.out.println("Solution to Project Euler problem 12: " + TriangularNumbers.get(index));
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #12: " + TriangularNumbers.get(index));
 	}
 	
 	public static long divisorCount(long num){

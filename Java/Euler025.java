@@ -14,7 +14,6 @@ public class Euler025{
 			bigInts.add(bigInts.get(i - 1).add(bigInts.get(i - 2)));
 		}
 		
-		System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
-		System.out.println("Solution to Project Euler problem 25: " + (bigInts.size()));
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #25: " + (bigInts.size()));
 	}
 }

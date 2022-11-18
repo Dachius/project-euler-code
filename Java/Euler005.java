@@ -9,6 +9,8 @@ public class Euler005{
     // x | y iff y contains (at least) all of the prime factors in x in (at least) equal numbers.
     // Therefore we factorize 1 <= n <= 20, find the minimum set of prime factors such that the above condition is met for all numbers, and multiply.
 	public static void main(String[] args){
+        long startTime = System.currentTimeMillis();
+
 		int[] maxOfEachPrimeFactor = new int[MAX];
         for(int i = 0; i < MAX; i++){
             int[] factors = factorize(i + 1);
@@ -17,14 +19,16 @@ public class Euler005{
             }
         }
 
+        // Find product of prime factors.
         long product = 1L;
         for(int i = 0; i < MAX; i++){
             product *= Math.pow(i + 1, maxOfEachPrimeFactor[i]);
         }
 
-        System.out.println("Solution #5: " + product);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #5: " + product);
     }
 
+    // Get prime factors.
     public static int[] factorize(int num){
         int[] factors = new int[MAX];
         for(int i = 2; i <= num; i++){
