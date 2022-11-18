@@ -12,14 +12,21 @@ public class Euler004 {
         // Generate all products of 3-digit numbers.
         for(int i = 100; i < 999; i++){
             for(int j = 100; j < 999; j++){
-                String s = Integer.toString(i * j);
-                // Check if s is a palindrome and overwrite largestPalindrome if it is larger than previous champion.
-                if(s.equals(new StringBuilder(s).reverse().toString()) && ((i * j) > largestPalindrome)){
-                    largestPalindrome = (i * j);
+                // Compute reverse of product
+                int trueProduct = i * j, product = trueProduct, reversedProduct = 0;
+
+                while(product != 0){
+                    reversedProduct = reversedProduct * 10 + product % 10;
+                    product /= 10;
+                }
+
+                // Reassign if larger
+                if(reversedProduct == trueProduct && trueProduct > largestPalindrome){
+                    largestPalindrome = trueProduct;
                 }
             }
         }
-
         System.out.println(largestPalindrome);
+        
     }
 }
