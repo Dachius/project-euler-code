@@ -6,6 +6,8 @@
 
 public class Euler005{
     public static final int MAX = 20;
+    // x | y iff y contains (at least) all of the prime factors in x in (at least) equal numbers.
+    // Therefore we factorize 1 <= n <= 20, find the minimum set of prime factors such that the above condition is met for all numbers, and multiply.
 	public static void main(String[] args){
 		int[] maxOfEachPrimeFactor = new int[MAX];
         for(int i = 0; i < MAX; i++){
