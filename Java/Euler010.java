@@ -1,27 +1,23 @@
-import java.math.*;
-
 public class Euler010{
 	public static void main(String[] args){
         long startTime = System.currentTimeMillis();
-		
-		BigInteger sum = new BigInteger("0");
-		
-		for(int i = 2; i < 2000000; i++){
-			if(isPrime(i)){
-				sum = sum.add(new BigInteger("" + i));
-			}
-		}
-		
-		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #10: " + sum);
+        
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #10: " + sumPrimes(2000000));
 	}
 	
-	public static boolean isPrime(int test){
-		//	This is highly inefficient- I know. ;-;
-		for(int i = 2; i <= Math.sqrt(test); i++){
-			if(test % i == 0){
-				return false;
-			}
-		}
-		return true;
-	}
+	// Implement sieve of Eratosthenes
+	public static long sumPrimes(int n){
+        long sum = 0;
+        boolean[] nums = new boolean[n];
+        for(long i = 1; i < n; i++){
+            if(!nums[(int)i]){
+                sum += (i + 1);
+                for(long j = (i + 1) * (i + 1); j <= n; j += (i + 1)){
+                    nums[(int)(j - 1)] = true;
+                }
+            }
+        }
+
+        return sum;
+    }
 }
