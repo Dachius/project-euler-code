@@ -1,30 +1,25 @@
 public class Euler014{
-	public static void main(String[] args){
+    public static void main(String[] args){
         long startTime = System.currentTimeMillis();
 		
-		long maxSteps = 0, num = 0;
-		
-		for(int i = 1; i < 1000000; i++){
-			long tempStep = collatzStep(i);
+		long maxSteps = 0, maxNum = 0;
+		for(int i = 500001; i < 1000000; i += 2){
+			long tempStep = stepCount(i);
 			if(tempStep > maxSteps){
 				maxSteps = tempStep;
-				num = i;
+			    maxNum = i;
 			}
 		}
         
-		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #14: " + num);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #14: " + maxNum);
 	}
 	
-	public static long collatzStep(long n){
+	public static long stepCount(long n){
 		long steps = 0;
-		
-		while(n!= 1){
-			//n is even
+		while(n != 1){
 			if(n % 2 == 0){
 				n /= 2;
-			}
-			//n is odd
-			else{
+			} else{
 				n = (n * 3) + 1;
 			}
 			steps++;
