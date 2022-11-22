@@ -3,21 +3,14 @@ import java.math.*;
 public class Euler016{
 	public static void main(String[] args){
         long startTime = System.currentTimeMillis();
-
-		BigInteger num = new BigInteger("1");
-		
-		BigInteger two = new BigInteger("2");
-		
-		for(int i = 0; i < 1000; i++){
-			num = num.multiply(two);
-		}
-		
+        
+        BigInteger two = new BigInteger("2");
+		BigInteger num = two.pow(1000);
 		String numString = num.toString();
-		
+
 		long sum = 0;
-		
 		for(int i = 0; i < numString.length(); i++){
-			sum += Long.parseLong(numString.substring(i, i + 1));
+			sum += numString.charAt(i) - '0';
 		}
 		
 		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #16: " + sum);
