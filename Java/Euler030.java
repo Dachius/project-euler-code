@@ -2,9 +2,11 @@ public class Euler030{
 	public static void main(String[] args){
 		long startTime = System.currentTimeMillis();
         
-		long sum = 0;
 		
-		for(int i = 2; i < 1000000; i++){
+		
+        // Choose 300,000 as maximum because 9^5 * 6 < 360,000.
+        long sum = 0;
+		for(int i = 2; i < 360000; i++){
 			if(equalsSumOfFifthPowersOfDigits(i)){
 				sum += i;
 			}
@@ -14,16 +16,14 @@ public class Euler030{
 	}
 	
 	public static boolean equalsSumOfFifthPowersOfDigits(int n){
-		String s = "" + n;
 		
-		char[] chars = s.toCharArray();
+		char[] chars = Integer.toString(n).toCharArray();
 		
-		long sumOfFifths = 0;
-		
+		long sum = 0;
 		for(int i = 0; i < chars.length; i++){
-			sumOfFifths += Math.pow(Integer.parseInt("" + chars[i]), 5);
+			sum += Math.pow(chars[i] - '0', 5);
 		}
 		
-		return (sumOfFifths == n);
+		return (sum == n);
 	}
 }
