@@ -5,33 +5,15 @@ public class Euler029{
 	public static void main(String[] args){
 		long startTime = System.currentTimeMillis();
         
-		ArrayList<BigInteger> combinations = new ArrayList<BigInteger>();
+		HashSet<BigInteger> nums = new HashSet<>();
 		
 		for(int a = 2; a <= 100; a++){
 			for(int b = 2; b <= 100; b++){
-				BigInteger tempNum = new BigInteger("1");
-				for(int i = 0; i < b; i++){
-					tempNum = tempNum.multiply(new BigInteger("" + a));
-				}
-				combinations.add(tempNum);
+				BigInteger tempNum = new BigInteger(Integer.toString(a)).pow(b);
+				nums.add(tempNum);
 			}
 		}
 		
-		ArrayList<BigInteger> distinctTerms = new ArrayList<BigInteger>();
-		
-		for(int i = 0; i < combinations.size(); i++){
-			boolean distinct = true;
-			for(int j = 0; j < distinctTerms.size(); j++){
-				if(combinations.get(i).equals(distinctTerms.get(j))){
-					distinct = false;
-                    break;
-				}
-			}
-			if(distinct){
-				distinctTerms.add(combinations.get(i));
-			}
-		}
-		
-		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #29: " + distinctTerms.size());
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #29: " + nums.size());
 	}
 }
