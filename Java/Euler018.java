@@ -42,6 +42,6 @@ public class Euler018{
 			}
 		}
         
-		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #15: " + sumTriangle[0][0]);
+		System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #18: " + sumTriangle[0][0]);
 	}
 }

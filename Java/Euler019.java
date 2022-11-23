@@ -16,6 +16,6 @@ public class Euler019 {
             c.add(Calendar.DAY_OF_MONTH, 1);
         }
 
-        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #16: " + count);
+        System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #19: " + count);
     }
 }
