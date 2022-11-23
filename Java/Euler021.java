@@ -14,18 +14,17 @@ public class Euler021{
     }
     
     public static int divisorSum(int num){
-        int tempSum = 0, sqrt = (int)Math.sqrt(num);
-
-        for(int i = 2; i < sqrt; i++){
+        int tempSum = 0;
+        for(int i = 2; i <= Math.sqrt(num); i++){
             if(num % i == 0){
-                tempSum += (i + num/i);
+                if(i == num/i){
+                    tempSum += i;
+                } else{
+                    tempSum += (i + num/i);
+                }
             }
         }
         
-        if(num == sqrt * sqrt && num != 1){
-            tempSum += sqrt;
-        }
-
         return tempSum + 1;
     }
 }
