@@ -10,7 +10,8 @@ public class Euler025{
 		bigInts.add(new BigInteger("1"));
 		bigInts.add(new BigInteger("1"));
 		
-		for(int i = 2; bigInts.get(bigInts.size() - 1).toString().length() < 1000; i++){
+        BigInteger breakPoint = new BigInteger("10").pow(999);
+		for(int i = 2; bigInts.get(bigInts.size() - 1).compareTo(breakPoint) <= 0; i++){
 			bigInts.add(bigInts.get(i - 1).add(bigInts.get(i - 2)));
 		}
 		
