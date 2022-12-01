@@ -20,13 +20,13 @@ public class Euler033 {
         System.out.println("[" + (System.currentTimeMillis() - startTime) + "ms] Solution #33: " + Math.ceil(1.0/denominator));
     }
 
-    //Takes an int num, returns an array consisting of its digits at their apporpriate indices
+    // Takes an int num, returns an array consisting of its digits at their apporpriate indices
 	public static int[] toDigits(int num){
-        char[] chars = ("" + num).toCharArray();
+        char[] chars = Integer.toString(num).toCharArray();
         int[] digitArray = new int[chars.length];
 
         for(int i = 0; i < digitArray.length; i++){
-			digitArray[i] = Integer.parseInt("" + chars[i]);
+			digitArray[i] = chars[i] - '0';
         }
         
         return digitArray;
