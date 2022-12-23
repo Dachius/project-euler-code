@@ -14,4 +14,4 @@ def factorize(num):
     return factors
 
 factors = factorize(600851475143)
-print("[" + str(int(time.time() - start_time)) + "ms] Solution #3: " + str(factors.pop()))
+print("[" + str(int(1000 * (time.time() - start_time))) + "ms] Solution #3: " + str(factors.pop()))

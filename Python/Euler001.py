@@ -6,4 +6,4 @@ sum = 0
 for x in range(1, 1000):
     if(x % 3 == 0 or x % 5 == 0): sum += x
 
-print("[" + str(int(time.time() - start_time)) + "ms] Solution #1: " + str(sum))
+print("[" + str(int(1000 * (time.time() - start_time))) + "ms] Solution #1: " + str(sum))

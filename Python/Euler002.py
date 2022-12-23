@@ -13,4 +13,4 @@ while fibs[2] < 4000000:
     fibs[1] = fibs[2]
     fibs[2] = fibs[0] + fibs[1]
 
-print("[" + str(int(time.time() - start_time)) + "ms] Solution #2: " + str(sum))
+print("[" + str(int(1000 * (time.time() - start_time))) + "ms] Solution #2: " + str(sum))
