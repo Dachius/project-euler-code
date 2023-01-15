@@ -12,7 +12,7 @@ public class Euler003 {
         long num = 600851475143L, largestPrimeFactor = 0;
 
         // Run through numbers less than num, and eliminate prime factors in ascending order for efficiency.
-        for(long i = 2; i < num; i++){
+        for(long i = 2; i <= num; i++){
             if(num % i == 0){
                 num /= i;
                 largestPrimeFactor =  i;
