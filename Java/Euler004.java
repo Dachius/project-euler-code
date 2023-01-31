@@ -13,7 +13,7 @@ public class Euler004 {
         int largestPalindrome = 0;
         // Generate all products of 3-digit numbers.
         for(int i = 100; i < 999; i++){
-            for(int j = 100; j < 999; j++){
+            for(int j = i; j < 999; j++){
                 // Compute reverse of product
                 int trueProduct = i * j, product = trueProduct, reversedProduct = 0;
 
